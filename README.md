@@ -1,2 +1,1 @@
-# animasi_roket
-bahasa c programming
+# animasi bahasa c programming
