@@ -1,0 +1,123 @@
+#include "stdio.h"
+#include "windows.h"
+
+void gotoxy(int x, int y){
+    HANDLE hConsoleOutput;
+    COORD dwCursorPosition;
+    dwCursorPosition.X = x;
+    dwCursorPosition.Y = y;
+    hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleCursorPosition(hConsoleOutput,dwCursorPosition);
+}
+
+
+void burung1()
+{
+    printf("                    *    \n");
+    printf("      *            **    \n");
+    printf("       **         ***    \n");
+    printf("        ***     ****     \n");
+    printf("         **** *****      \n");
+    printf("           *****         \n");
+    printf("        ****  ***        \n");
+    printf("       *         **      \n");
+    printf("                  ***    \n");
+}
+
+void burung3()
+{
+    printf("                           \n");
+    printf("                           \n");
+    printf("                     *     \n");
+    printf("        *         ***       \n");
+    printf("         **** *****        \n");
+    printf("           *****           \n");
+    printf("        ****  ***          \n");
+    printf("       *         **        \n");
+    printf("                  ***      \n");
+}
+void burung4()
+{
+    gotoxy(90,0);printf("                    *    \n");
+    gotoxy(90,1);printf("      *            **    \n");
+    gotoxy(90,2);printf("       **         ***    \n");
+    gotoxy(90,3);printf("        ***     ****     \n");
+    gotoxy(90,4);printf("         **** *****      \n");
+    gotoxy(90,5);printf("           *****         \n");
+    gotoxy(90,6);printf("        ****  ***        \n");
+    gotoxy(90,7);printf("       *         **      \n");
+    gotoxy(90,8);printf("                  ***    \n");
+}
+void burung5(){
+
+    gotoxy(45,0);printf("                             \n");
+    gotoxy(45,1);printf("                             \n");
+    gotoxy(45,2);printf("                             \n");
+    gotoxy(45,3);printf("       ****                  \n");
+    gotoxy(45,4);printf("     *   ******* **          \n");
+    gotoxy(45,5);printf("       *** *****  ***        \n");
+    gotoxy(45,6);printf("      *** ****      ***      \n");
+    gotoxy(45,7);printf("     **  ***                 \n");
+    gotoxy(45,8);printf("    *   **                   \n");
+    gotoxy(45,9);printf("       *                     \n");
+}
+void burung2()
+{
+    printf("                             \n");
+    printf("                             \n");
+    printf("                             \n");
+    printf("                             \n");
+    printf("       ****                  \n");
+    printf("     *   ******* **          \n");
+    printf("       *** *****  ***        \n");
+    printf("      *** ****      ***      \n");
+    printf("     **  ***                 \n");
+    printf("    *   **                   \n");
+    printf("       *                     \n");
+
+}
+
+void main(){
+   int j=1,i;
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),1);
+    burung4();
+    Sleep(500);
+    system("cls");
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),10);
+    burung5();
+    Sleep(500);
+    system("cls");
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),7);
+    burung1();
+    Sleep(500);
+    system("cls");
+
+   for(i=1;i<=10;i++)
+   {
+       SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),i);
+
+   if(j==1){
+        burung1();
+        j=2;
+        Sleep(100);
+        system("cls");
+
+   }
+   if(j==2){
+        burung2();
+        j=3;
+         Sleep(100);
+        system("cls");
+   }
+   if(j==3)
+   {
+        burung3();
+        j=1;
+         Sleep(100);
+        system("cls");
+   }
+   }
+
+    burung1();
+
+}
