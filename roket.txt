@@ -1,0 +1,227 @@
+//Membuat Animasi Rocket
+#include "stdio.h"
+#include "windows.h"
+#include "conio.h"
+
+void gotoxy(int x, int y){
+    HANDLE hConsoleOutput;
+    COORD dwCursorPosition;
+    dwCursorPosition.X = x;
+    dwCursorPosition.Y = y;
+    hConsoleOutput = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleCursorPosition(hConsoleOutput, dwCursorPosition);
+}
+
+void nomor5()
+{
+    gotoxy(40,10);printf("              **********              ");
+    gotoxy(40,11);printf("              **********              ");
+    gotoxy(40,12);printf("              ***                     ");
+    gotoxy(40,13);printf("              ***                     ");
+    gotoxy(40,14);printf("              **********              ");
+    gotoxy(40,15);printf("              **********              ");
+    gotoxy(40,16);printf("                     ***              ");
+    gotoxy(40,17);printf("                     ***              ");
+    gotoxy(40,18);printf("              **********              ");
+    gotoxy(40,19);printf("              **********              ");
+}
+
+void nomor4()
+{
+    gotoxy(40,10);printf("              ***    ***              ");
+    gotoxy(40,11);printf("              ***    ***              ");
+    gotoxy(40,12);printf("              ***    ***              ");
+    gotoxy(40,13);printf("              ***    ***              ");
+    gotoxy(40,14);printf("              **********              ");
+    gotoxy(40,15);printf("              **********              ");
+    gotoxy(40,16);printf("                     ***              ");
+    gotoxy(40,17);printf("                     ***              ");
+    gotoxy(40,18);printf("                     ***              ");
+    gotoxy(40,19);printf("                     ***              ");
+}
+
+void nomor3()
+{
+    gotoxy(40,10);printf("              **********              ");
+    gotoxy(40,11);printf("              **********              ");
+    gotoxy(40,12);printf("                     ***              ");
+    gotoxy(40,13);printf("                     ***              ");
+    gotoxy(40,14);printf("              **********              ");
+    gotoxy(40,15);printf("              **********              ");
+    gotoxy(40,16);printf("                     ***              ");
+    gotoxy(40,17);printf("                     ***              ");
+    gotoxy(40,18);printf("              **********              ");
+    gotoxy(40,19);printf("              **********              ");
+}
+
+void nomor2()
+{
+    gotoxy(40,10);printf("              **********              ");
+    gotoxy(40,11);printf("              **********              ");
+    gotoxy(40,12);printf("                     ***              ");
+    gotoxy(40,13);printf("                     ***              ");
+    gotoxy(40,14);printf("              **********              ");
+    gotoxy(40,15);printf("              **********              ");
+    gotoxy(40,16);printf("              ***                     ");
+    gotoxy(40,17);printf("              ***                     ");
+    gotoxy(40,18);printf("              **********              ");
+    gotoxy(40,19);printf("              **********              ");
+}
+
+void nomor1()
+{
+    gotoxy(40,10);printf("                 ***              ");
+    gotoxy(40,11);printf("                 ***              ");
+    gotoxy(40,12);printf("                 ***              ");
+    gotoxy(40,13);printf("                 ***              ");
+    gotoxy(40,14);printf("                 ***              ");
+    gotoxy(40,15);printf("                 ***              ");
+    gotoxy(40,16);printf("                 ***              ");
+    gotoxy(40,17);printf("                 ***              ");
+    gotoxy(40,18);printf("                 ***              ");
+    gotoxy(40,19);printf("                 ***              ");
+}
+
+void roket1(int i){
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),7);
+    gotoxy(40,i-16); printf("               *                ");
+    gotoxy(40,i-15); printf("              ***               ");
+    gotoxy(40,i-14); printf("            **   **             ");
+    gotoxy(40,i-13); printf("           **     **            ");
+    gotoxy(40,i-12); printf("           *********            ");
+    gotoxy(40,i-11); printf("           *** * ***            ");
+    gotoxy(40,i-10); printf("           ***   ***            ");
+    gotoxy(40,i-9);  printf("         ***** * *****          ");
+    gotoxy(40,i-8);  printf("        *  ***   ***  *         ");
+    gotoxy(40,i-7);  printf("       *  * ******* *  *        ");
+    gotoxy(40,i-6);  printf("       * *   ** **   * *        ");
+    gotoxy(40,i-5);  printf("        *     ***     *         ");
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),4);
+    gotoxy(40,i-4);  printf("             * * *              ");
+    gotoxy(40,i-3);  printf("            *  *  *             ");
+    gotoxy(40,i-2);  printf("             *   *              ");
+    gotoxy(40,i-1);  printf("                                ");
+    gotoxy(40,i);    printf("                                ");
+}
+
+void roket2(int i){
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),7);
+    gotoxy(40,i-16); printf("               *                ");
+    gotoxy(40,i-15); printf("              ***               ");
+    gotoxy(40,i-14); printf("            **   **             ");
+    gotoxy(40,i-13); printf("           **     **            ");
+    gotoxy(40,i-12); printf("           *********            ");
+    gotoxy(40,i-11); printf("           *** * ***            ");
+    gotoxy(40,i-10); printf("           ***   ***            ");
+    gotoxy(40,i-9);  printf("         ***** * *****          ");
+    gotoxy(40,i-8);  printf("        *  ***   ***  *         ");
+    gotoxy(40,i-7);  printf("       *  * ******* *  *        ");
+    gotoxy(40,i-6);  printf("       * *   ** **   * *        ");
+    gotoxy(40,i-5);  printf("        *     ***     *         ");
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),4);
+    gotoxy(40,i-4);  printf("             * * *              ");
+    gotoxy(40,i-3);  printf("            * * * *             ");
+    gotoxy(40,i-2);  printf("             * * *              ");
+    gotoxy(40,i-1);  printf("                                ");
+    gotoxy(40,i);    printf("                                ");
+}
+
+void roket3(int i){
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),7);
+    gotoxy(40,i-16); printf("               *                ");
+    gotoxy(40,i-15); printf("              ***               ");
+    gotoxy(40,i-14); printf("            **   **             ");
+    gotoxy(40,i-13); printf("           **     **            ");
+    gotoxy(40,i-12); printf("           *********            ");
+    gotoxy(40,i-11); printf("           *** * ***            ");
+    gotoxy(40,i-10); printf("           ***   ***            ");
+    gotoxy(40,i-9);  printf("         ***** * *****          ");
+    gotoxy(40,i-8);  printf("        *  ***   ***  *         ");
+    gotoxy(40,i-7);  printf("       *  * ******* *  *        ");
+    gotoxy(40,i-6);  printf("       * *   ** **   * *        ");
+    gotoxy(40,i-5);  printf("        *     ***     *         ");
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),4);
+    gotoxy(40,i-4);  printf("             * * *              ");
+    gotoxy(40,i-3);  printf("            * *** *             ");
+    gotoxy(40,i-2);  printf("             * * *              ");
+    gotoxy(40,i-1);  printf("              * *               ");
+    gotoxy(40,i);    printf("                                ");
+}
+
+void roket4(int i){
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),7);
+    gotoxy(40,i-16); printf("               *                ");
+    gotoxy(40,i-15); printf("              ***               ");
+    gotoxy(40,i-14); printf("            **   **             ");
+    gotoxy(40,i-13); printf("           **     **            ");
+    gotoxy(40,i-12); printf("           *********            ");
+    gotoxy(40,i-11); printf("           *** * ***            ");
+    gotoxy(40,i-10); printf("           ***   ***            ");
+    gotoxy(40,i-9);  printf("         ***** * *****          ");
+    gotoxy(40,i-8);  printf("        *  ***   ***  *         ");
+    gotoxy(40,i-7);  printf("       *  * ******* *  *        ");
+    gotoxy(40,i-6);  printf("       * *   ** **   * *        ");
+    gotoxy(40,i-5);  printf("        *     ***     *         ");
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),4);
+    gotoxy(40,i-4);  printf("             * * *              ");
+    gotoxy(40,i-3);  printf("            * *** *             ");
+    gotoxy(40,i-2);  printf("             * * *              ");
+    gotoxy(40,i-1);  printf("              * *               ");
+    gotoxy(40,i);    printf("               *                ");
+}
+
+void main(){
+    int i,j=1;
+    printf("Tekan Apapun Untuk Lanjut...");
+    getch();
+    system("cls");
+    system("COLOR 4");
+    nomor5();
+    Sleep(1000);
+    system("cls");
+
+    nomor4();
+    Sleep(1000);
+    system("cls");
+
+    nomor3();
+    Sleep(1000);
+    system("cls");
+
+    nomor2();
+    Sleep(1000);
+    system("cls");
+
+    nomor1();
+    Sleep(1000);
+    system("cls");
+
+    //Roket Meluncur
+    for(i=40;i>=16;i--){
+        if(j==1){
+            roket1(i);
+            j=2;
+            Sleep(50);
+            system("cls");
+        }
+        else if(j==2){
+            roket2(i);
+            j=3;
+            Sleep(50);
+            system("cls");
+        }
+        else if(j==3){
+            roket3(i);
+            j=4;
+            Sleep(50);
+            system("cls");
+        }
+        else if(j==4){
+            roket4(i);
+            j=1;
+            Sleep(50);
+            system("cls");
+        }
+    }
+    roket4(16);
+}
